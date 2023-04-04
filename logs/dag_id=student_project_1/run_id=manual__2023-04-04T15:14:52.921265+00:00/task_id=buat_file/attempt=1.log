@@ -1,0 +1,24 @@
+[2023-04-04T15:14:59.107+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: student_project_1.buat_file manual__2023-04-04T15:14:52.921265+00:00 [queued]>
+[2023-04-04T15:14:59.122+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: student_project_1.buat_file manual__2023-04-04T15:14:52.921265+00:00 [queued]>
+[2023-04-04T15:14:59.124+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-04T15:14:59.125+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-04-04T15:14:59.126+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-04T15:14:59.145+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): buat_file> on 2023-04-04 15:14:52.921265+00:00
+[2023-04-04T15:14:59.156+0000] {standard_task_runner.py:55} INFO - Started process 1364 to run task
+[2023-04-04T15:14:59.162+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'student_project_1', 'buat_file', 'manual__2023-04-04T15:14:52.921265+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmph_b3w_vo']
+[2023-04-04T15:14:59.163+0000] {standard_task_runner.py:83} INFO - Job 116: Subtask buat_file
+[2023-04-04T15:14:59.248+0000] {task_command.py:388} INFO - Running <TaskInstance: student_project_1.buat_file manual__2023-04-04T15:14:52.921265+00:00 [running]> on host c674d51e959b
+[2023-04-04T15:14:59.343+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=student_project_1
+AIRFLOW_CTX_TASK_ID=buat_file
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-04T15:14:52.921265+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-04T15:14:52.921265+00:00
+[2023-04-04T15:14:59.375+0000] {logging_mixin.py:137} INFO - Memulai membuat file csv
+[2023-04-04T15:14:59.376+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-04T15:14:59.387+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=student_project_1, task_id=buat_file, execution_date=20230404T151452, start_date=20230404T151459, end_date=20230404T151459
+[2023-04-04T15:14:59.414+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-04-04T15:14:59.444+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

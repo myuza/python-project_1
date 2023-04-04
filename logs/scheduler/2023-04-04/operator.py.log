@@ -1,0 +1,28 @@
+[2023-04-04T15:08:43.365+0000] {processor.py:153} INFO - Started process (PID=2140) to work on /opt/airflow/dags/operator.py
+[2023-04-04T15:08:43.366+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/operator.py for tasks to queue
+[2023-04-04T15:08:43.367+0000] {logging_mixin.py:137} INFO - [2023-04-04T15:08:43.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/operator.py
+[2023-04-04T15:08:43.383+0000] {logging_mixin.py:137} INFO - [2023-04-04T15:08:43.380+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/operator.py", line 2, in <module>
+    dag = DAG(
+NameError: name 'DAG' is not defined
+[2023-04-04T15:08:43.384+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/operator.py
+[2023-04-04T15:08:43.406+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/operator.py took 0.044 seconds
+[2023-04-04T15:09:14.097+0000] {processor.py:153} INFO - Started process (PID=2221) to work on /opt/airflow/dags/operator.py
+[2023-04-04T15:09:14.099+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/operator.py for tasks to queue
+[2023-04-04T15:09:14.100+0000] {logging_mixin.py:137} INFO - [2023-04-04T15:09:14.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/operator.py
+[2023-04-04T15:09:14.115+0000] {logging_mixin.py:137} INFO - [2023-04-04T15:09:14.113+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/operator.py", line 2, in <module>
+    dag = DAG(
+NameError: name 'DAG' is not defined
+[2023-04-04T15:09:14.116+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/operator.py
+[2023-04-04T15:09:14.155+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/operator.py took 0.061 seconds

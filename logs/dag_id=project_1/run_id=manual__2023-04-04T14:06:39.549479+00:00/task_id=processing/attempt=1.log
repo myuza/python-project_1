@@ -1,0 +1,51 @@
+[2023-04-04T14:06:48.199+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: project_1.processing manual__2023-04-04T14:06:39.549479+00:00 [queued]>
+[2023-04-04T14:06:48.206+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: project_1.processing manual__2023-04-04T14:06:39.549479+00:00 [queued]>
+[2023-04-04T14:06:48.207+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-04T14:06:48.208+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-04-04T14:06:48.208+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-04T14:06:48.217+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): processing> on 2023-04-04 14:06:39.549479+00:00
+[2023-04-04T14:06:48.223+0000] {standard_task_runner.py:55} INFO - Started process 462 to run task
+[2023-04-04T14:06:48.227+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'project_1', 'processing', 'manual__2023-04-04T14:06:39.549479+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmp8kq4nu6q']
+[2023-04-04T14:06:48.228+0000] {standard_task_runner.py:83} INFO - Job 108: Subtask processing
+[2023-04-04T14:06:48.302+0000] {task_command.py:388} INFO - Running <TaskInstance: project_1.processing manual__2023-04-04T14:06:39.549479+00:00 [running]> on host 5a0c266ff4c6
+[2023-04-04T14:06:48.355+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=project_1
+AIRFLOW_CTX_TASK_ID=processing
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-04T14:06:39.549479+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-04T14:06:39.549479+00:00
+[2023-04-04T14:06:48.378+0000] {base.py:73} INFO - Using connection ID 'postgre_***' for task execution.
+[2023-04-04T14:06:48.395+0000] {logging_mixin.py:137} INFO - Process insert data from csv. . .
+[2023-04-04T14:06:48.406+0000] {logging_mixin.py:137} INFO - 0
+[2023-04-04T14:06:48.406+0000] {logging_mixin.py:137} INFO - Total number of rows on sku A01 :  0
+[2023-04-04T14:06:48.407+0000] {logging_mixin.py:137} INFO - 0
+[2023-04-04T14:06:48.408+0000] {logging_mixin.py:137} INFO - Total number of rows on sku A02 :  0
+[2023-04-04T14:06:48.408+0000] {logging_mixin.py:137} INFO - 0
+[2023-04-04T14:06:48.409+0000] {logging_mixin.py:137} INFO - Total number of rows on sku A03 :  0
+[2023-04-04T14:06:48.409+0000] {logging_mixin.py:137} INFO - 0
+[2023-04-04T14:06:48.410+0000] {logging_mixin.py:137} INFO - Total number of rows on sku B01 :  0
+[2023-04-04T14:06:48.410+0000] {logging_mixin.py:137} INFO - 0
+[2023-04-04T14:06:48.411+0000] {logging_mixin.py:137} INFO - Total number of rows on sku B02 :  0
+[2023-04-04T14:06:48.411+0000] {logging_mixin.py:137} INFO - 0
+[2023-04-04T14:06:48.412+0000] {logging_mixin.py:137} INFO - Total number of rows on sku B03 :  0
+[2023-04-04T14:06:48.420+0000] {base.py:73} INFO - Using connection ID 'postgre_***' for task execution.
+[2023-04-04T14:06:48.427+0000] {logging_mixin.py:137} INFO - Process insert data from csv. . .
+[2023-04-04T14:06:48.430+0000] {logging_mixin.py:137} INFO - 1
+[2023-04-04T14:06:48.431+0000] {logging_mixin.py:137} INFO - Total number of rows on sku A01 :  1
+[2023-04-04T14:06:48.431+0000] {logging_mixin.py:137} INFO - 1
+[2023-04-04T14:06:48.432+0000] {logging_mixin.py:137} INFO - Total number of rows on sku A02 :  1
+[2023-04-04T14:06:48.432+0000] {logging_mixin.py:137} INFO - 1
+[2023-04-04T14:06:48.433+0000] {logging_mixin.py:137} INFO - Total number of rows on sku A03 :  1
+[2023-04-04T14:06:48.433+0000] {logging_mixin.py:137} INFO - 1
+[2023-04-04T14:06:48.434+0000] {logging_mixin.py:137} INFO - Total number of rows on sku B01 :  1
+[2023-04-04T14:06:48.435+0000] {logging_mixin.py:137} INFO - 1
+[2023-04-04T14:06:48.435+0000] {logging_mixin.py:137} INFO - Total number of rows on sku B02 :  1
+[2023-04-04T14:06:48.436+0000] {logging_mixin.py:137} INFO - 1
+[2023-04-04T14:06:48.436+0000] {logging_mixin.py:137} INFO - Total number of rows on sku B03 :  1
+[2023-04-04T14:06:48.437+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-04T14:06:48.446+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=project_1, task_id=processing, execution_date=20230404T140639, start_date=20230404T140648, end_date=20230404T140648
+[2023-04-04T14:06:48.479+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-04-04T14:06:48.501+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
